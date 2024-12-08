@@ -1,30 +1,61 @@
-
- body{
+body{
      font-family: Poppins, sans-serif;
      background-color: rgb(229, 212, 192);
      color: rgb(2, 1, 0);
-   margin-left: 150px;
-   margin-right: 150px;
+   margin-left: 0;
+   margin-right: o;
+}
+header {
+  position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #bfb0b0;
+padding: 20px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+text-decoration: none;
+}
+header {
+  transition: all 0.3s ease-in-out;
+}
+header.stickey {
+  background-color: #333;
+}
+@media  (max-width: 768px) {  
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
-@media screen and ( max-width:400px)
-{
-
-}  
-
 .logo img{
-    width: 30%;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}   
+}
+
+
+
+.logo img {
+    width: 50%;
     border-radius: 50%;
     text-align: center;
     padding: 20px 20px;
-    margin-left: 400px;
-    
-   
-    
+   margin: 0 auto;
+   display: block;
     
 }
 
-.cta-button {
+.cta-button , .button {
     background-color: rgb(195, 195, 195);
    color: white;
    padding: 15px 30px;
@@ -36,26 +67,31 @@ text-decoration: none;
 border-radius: 25px;
 margin-bottom: 10%;
 cursor: pointer;
+transition: background-color 0.3s ease, font-size 0.3s ease
 } 
-
-
+.cta-button , .button:hover {
+  background-color: rgb(138, 135, 132);
+  font-size: 20px;
+ }
+.course-card1, .course-card2 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.course-card3 {
+  width: 70;
+  margin-bottom: 20px;
+}
+.button a:hover {
+background-color: rgb(138, 135, 132);
+font-size: larger;
+}
 h1{
     color: whitesmoke;
   text-align: center;
   font-weight: bolder;
 }
- .course-card1 img{
-    max-height: 300px;
-    max-width: 500px;
- }
- .course-card2 img{
-    max-width: 300px;
-    max-height: 500px;
- }
- .course-card3 img{
-    max-width: 300px;
-    max-height: 700px;  
- }
+ 
+ 
  .Home{
    text-decoration: none; 
    background-color: rgb(193, 199, 205);
@@ -82,14 +118,7 @@ h1{
  h3{
     color: rgb(107, 99, 99);
     margin-top: 10%;
- }
- 
- 
-
-   
-   
-    
- 
+ } 
  ul {
     list-style-type: none;
     margin: 0;
@@ -97,7 +126,7 @@ h1{
     overflow: hidden;
     background-color: #bfb0b0;
     display: flex;
-    flex-direction: row;
+    flex-direction: r;
     list-style: none;
     text-align: center;
   }
@@ -105,6 +134,7 @@ h1{
   li { 
     float: left;
     width: 25%;
+    
      
   }
   
@@ -130,27 +160,8 @@ display: block;
 }
     
 
-    .course-card1{
-      margin-top: 10%;
-      margin-bottom: 10%;
-      margin-right:40% ;
-      margin-left: 40%;
-     
-    }
-    .course-card2{
-      margin-top : 20%;
-      margin-bottom: 10%;
-      margin-right:40% ;
-      margin-left: 40%;
-    }
-    .course-card3{
-      margin-top: 10%;
-      margin-right:40% ;
-      margin-left: 40%;
-    }
-    cta-button button:hover {
-      background-color: antiquewhite;
-    }
+    
+    
     .contact h2{
 font-size: xx-large;
 margin-bottom: 20px;
@@ -192,11 +203,7 @@ color: rgb(74, 33, 3);
     .c{
       text-align: center;
     }
-   .cta-button
-    a:hover {
-    background-color: rgb(138, 135, 132);
-    font-size: 20px;
-   }
+   
    .l {
     font-weight: bolder;
    }
