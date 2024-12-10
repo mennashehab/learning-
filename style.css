@@ -46,14 +46,16 @@ ul {
 
 
 .logo img {
-    width: 50%;
+    width: 100%;
     border-radius: 50%;
     text-align: center;
     padding: 20px 20px;
    margin: 0 auto;
    display: block;
-    
+  .course-card1, .course-card2, .course-card3 {
+       width: 100;
 }
+
 
 .cta-button , .button {
     background-color: rgb(195, 195, 195);
@@ -74,13 +76,27 @@ transition: background-color 0.3s ease, font-size 0.3s ease
   font-size: 20px;
  }
 .course-card1, .course-card2 {
-  width: 50%;
+  max-width: 100%;
+     height: auto;
+     display: block;
   margin-bottom: 20px;
 }
 .course-card3 {
-  width: 70;
+max-width: 100%;
+     height: auto;
+     display: block;
   margin-bottom: 20px;
 }
+     .course-card1, .course-card2, .course-card3 {
+          display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+     }
+     
 .button a:hover {
 background-color: rgb(138, 135, 132);
 font-size: larger;
